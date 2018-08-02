@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18079b579b9747f193d3860cdcb24346" Name="Diagram1">
+        <EntityTypeShape EntityType="HackSaaSModel.Customers" Width="1.5" PointX="3.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackSaaSModel.ServicePlanTypes" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackSaaSModel.Services" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackSaaSModel.ServiceStatuses" Width="1.5" PointX="1.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackSaaSModel.UserInfo" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackSaaSModel.UserSubscriptions" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="HackSaaSModel.FK_UserSubscriptions_ServicePlanTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="HackSaaSModel.FK_Services_ServiceStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="HackSaaSModel.FK_UserSubscriptions_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="HackSaaSModel.FK_UserSubscriptions_UserInfo" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HackSaaSModel.ServicePlanCosts" Width="1.5" PointX="3" PointY="4.375" />
+        <AssociationConnector Association="HackSaaSModel.FK_ServicePlanCosts_ServicePlanTypes" />
+        <AssociationConnector Association="HackSaaSModel.FK_ServicePlanCosts_Services" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

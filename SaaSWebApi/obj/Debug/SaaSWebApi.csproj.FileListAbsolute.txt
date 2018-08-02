@@ -1,0 +1,241 @@
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\ApplicationInsights.config
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\csc.exe
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\vbc.exe
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\WebApplication1.dll.config
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\WebApplication1.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\WebApplication1.pdb
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.Web.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Web.Http.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.Web.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\Newtonsoft.Json.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Net.Http.Formatting.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Web.Http.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\obj\Debug\SaaSWebApi.csprojResolveAssemblyReference.cache
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Projects\NFP\GITSource\HackSaaS\HackSaaS\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\obj\Debug\SaaSWebApi.csprojResolveAssemblyReference.cache
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\ApplicationInsights.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\csc.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\vbc.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\WebApplication1.dll.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\WebApplication1.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\WebApplication1.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.Web.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSDAL.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSDTO.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSService.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\EntityFramework.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSDAL.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSDTO.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\SaaSService.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.Web.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Newtonsoft.Json.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Net.Http.Formatting.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\EntityFramework.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Cors.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Helpers.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.Cors.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.Tracing.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Mvc.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Razor.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Helpers.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.Cors.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Http.Tracing.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Mvc.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.Razor.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\ApplicationInsights.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\csc.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\vbc.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\VBCSCompiler.exe
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSWebApi.dll.config
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSWebApi.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSWebApi.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.Web.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Newtonsoft.Json.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSDAL.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSDTO.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSService.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Net.Http.Formatting.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Cors.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Helpers.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.Cors.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.Tracing.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.WebHost.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Mvc.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Razor.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.Razor.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\EntityFramework.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSDAL.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSDTO.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\SaaSService.pdb
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.Web.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\Newtonsoft.Json.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Net.Http.Formatting.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Helpers.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.Cors.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.Tracing.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Http.WebHost.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Mvc.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.Razor.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.Razor.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\EntityFramework.xml
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\obj\Debug\SaaSWebApi.dll
+D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\obj\Debug\SaaSWebApi.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.csprojResolveAssemblyReference.cache
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\ApplicationInsights.config
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\csc.exe
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\vbc.exe
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSWebApi.dll.config
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSWebApi.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSWebApi.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.Web.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Newtonsoft.Json.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSDAL.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSDTO.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSService.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Net.Http.Formatting.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Cors.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Helpers.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.Cors.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.Tracing.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.WebHost.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Mvc.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Razor.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\EntityFramework.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSDAL.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSDTO.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\SaaSService.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.Web.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\Newtonsoft.Json.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Net.Http.Formatting.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Helpers.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.Cors.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.Tracing.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Http.WebHost.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Mvc.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.Razor.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\EntityFramework.xml

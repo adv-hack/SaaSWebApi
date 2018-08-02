@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HackSaaSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mobile" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Address" Type="varchar(max)" Nullable="false" />
+          <Property Name="Notes" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="ServicePlanCosts">
+          <Key>
+            <PropertyRef Name="ServiceCostID" />
+          </Key>
+          <Property Name="ServiceCostID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="PlanTypeID" Type="smallint" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServicePlanTypes">
+          <Key>
+            <PropertyRef Name="PlanTypeID" />
+          </Key>
+          <Property Name="PlanTypeID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PlanType" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Services">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Name="ServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ServiceName" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ServiceDesc" Type="varchar" MaxLength="200" />
+          <Property Name="StatusID" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ServiceStatuses">
+          <Key>
+            <PropertyRef Name="StatusID" />
+          </Key>
+          <Property Name="StatusID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StatusDesc" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="FullName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="80" Nullable="false" />
+          <Property Name="Token" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RegisteredDate" Type="datetime" Nullable="false" />
+          <Property Name="AmendedOn" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserSubscriptions">
+          <Key>
+            <PropertyRef Name="UserSubID" />
+          </Key>
+          <Property Name="UserSubID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="bigint" Nullable="false" />
+          <Property Name="ServiceID" Type="int" Nullable="false" />
+          <Property Name="PlanTypeID" Type="smallint" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="SubscribedOn" Type="datetime" Nullable="false" />
+          <Property Name="ExpiredOn" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_ServicePlanCosts_ServicePlanTypes">
+          <End Role="ServicePlanTypes" Type="Self.ServicePlanTypes" Multiplicity="1" />
+          <End Role="ServicePlanCosts" Type="Self.ServicePlanCosts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServicePlanTypes">
+              <PropertyRef Name="PlanTypeID" />
+            </Principal>
+            <Dependent Role="ServicePlanCosts">
+              <PropertyRef Name="PlanTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicePlanCosts_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="ServicePlanCosts" Type="Self.ServicePlanCosts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="ServiceID" />
+            </Principal>
+            <Dependent Role="ServicePlanCosts">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Services_ServiceStatuses">
+          <End Role="ServiceStatuses" Type="Self.ServiceStatuses" Multiplicity="1" />
+          <End Role="Services" Type="Self.Services" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServiceStatuses">
+              <PropertyRef Name="StatusID" />
+            </Principal>
+            <Dependent Role="Services">
+              <PropertyRef Name="StatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSubscriptions_ServicePlanTypes">
+          <End Role="ServicePlanTypes" Type="Self.ServicePlanTypes" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServicePlanTypes">
+              <PropertyRef Name="PlanTypeID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="PlanTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSubscriptions_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="ServiceID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSubscriptions_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HackSaaSModelStoreContainer">
+          <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServicePlanCosts" EntityType="Self.ServicePlanCosts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServicePlanTypes" EntityType="Self.ServicePlanTypes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ServiceStatuses" EntityType="Self.ServiceStatuses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserSubscriptions" EntityType="Self.UserSubscriptions" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ServicePlanCosts_ServicePlanTypes" Association="Self.FK_ServicePlanCosts_ServicePlanTypes">
+            <End Role="ServicePlanTypes" EntitySet="ServicePlanTypes" />
+            <End Role="ServicePlanCosts" EntitySet="ServicePlanCosts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicePlanCosts_Services" Association="Self.FK_ServicePlanCosts_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicePlanCosts" EntitySet="ServicePlanCosts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Services_ServiceStatuses" Association="Self.FK_Services_ServiceStatuses">
+            <End Role="ServiceStatuses" EntitySet="ServiceStatuses" />
+            <End Role="Services" EntitySet="Services" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSubscriptions_ServicePlanTypes" Association="Self.FK_UserSubscriptions_ServicePlanTypes">
+            <End Role="ServicePlanTypes" EntitySet="ServicePlanTypes" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSubscriptions_Services" Association="Self.FK_UserSubscriptions_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSubscriptions_UserInfo" Association="Self.FK_UserSubscriptions_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HackSaaSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ServicePlanTypes">
+          <Key>
+            <PropertyRef Name="PlanTypeID" />
+          </Key>
+          <Property Name="PlanTypeID" Type="Int16" Nullable="false" />
+          <Property Name="PlanType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="UserSubscriptions" Relationship="Self.FK_UserSubscriptions_ServicePlanTypes" FromRole="ServicePlanTypes" ToRole="UserSubscriptions" />
+          <NavigationProperty Name="ServicePlanCosts" Relationship="HackSaaSModel.FK_ServicePlanCosts_ServicePlanTypes" FromRole="ServicePlanTypes" ToRole="ServicePlanCosts" />
+        </EntityType>
+        <EntityType Name="Services">
+          <Key>
+            <PropertyRef Name="ServiceID" />
+          </Key>
+          <Property Name="ServiceID" Type="Int32" Nullable="false" />
+          <Property Name="ServiceName" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ServiceDesc" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="StatusID" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="ServiceStatuses" Relationship="Self.FK_Services_ServiceStatuses" FromRole="Services" ToRole="ServiceStatuses" />
+          <NavigationProperty Name="UserSubscriptions" Relationship="Self.FK_UserSubscriptions_Services" FromRole="Services" ToRole="UserSubscriptions" />
+          <NavigationProperty Name="ServicePlanCosts" Relationship="HackSaaSModel.FK_ServicePlanCosts_Services" FromRole="Services" ToRole="ServicePlanCosts" />
+        </EntityType>
+        <EntityType Name="ServiceStatuses">
+          <Key>
+            <PropertyRef Name="StatusID" />
+          </Key>
+          <Property Name="StatusID" Type="Int16" Nullable="false" />
+          <Property Name="StatusDesc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Services" Relationship="Self.FK_Services_ServiceStatuses" FromRole="ServiceStatuses" ToRole="Services" />
+        </EntityType>
+        <EntityType Name="UserInfo">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int64" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Token" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RegisteredDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AmendedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="UserSubscriptions" Relationship="Self.FK_UserSubscriptions_UserInfo" FromRole="UserInfo" ToRole="UserSubscriptions" />
+        </EntityType>
+        <EntityType Name="UserSubscriptions">
+          <Key>
+            <PropertyRef Name="UserSubID" />
+          </Key>
+          <Property Name="UserSubID" Type="Int64" Nullable="false" />
+          <Property Name="UserID" Type="Int64" Nullable="false" />
+          <Property Name="ServiceID" Type="Int32" Nullable="false" />
+          <Property Name="PlanTypeID" Type="Int16" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="SubscribedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ExpiredOn" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="ServicePlanTypes" Relationship="Self.FK_UserSubscriptions_ServicePlanTypes" FromRole="UserSubscriptions" ToRole="ServicePlanTypes" />
+          <NavigationProperty Name="Services" Relationship="Self.FK_UserSubscriptions_Services" FromRole="UserSubscriptions" ToRole="Services" />
+          <NavigationProperty Name="UserInfo" Relationship="Self.FK_UserSubscriptions_UserInfo" FromRole="UserSubscriptions" ToRole="UserInfo" />
+        </EntityType>
+        <Association Name="FK_UserSubscriptions_ServicePlanTypes">
+          <End Role="ServicePlanTypes" Type="Self.ServicePlanTypes" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServicePlanTypes">
+              <PropertyRef Name="PlanTypeID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="PlanTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Services_ServiceStatuses">
+          <End Role="ServiceStatuses" Type="Self.ServiceStatuses" Multiplicity="1" />
+          <End Role="Services" Type="Self.Services" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServiceStatuses">
+              <PropertyRef Name="StatusID" />
+            </Principal>
+            <Dependent Role="Services">
+              <PropertyRef Name="StatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSubscriptions_Services">
+          <End Role="Services" Type="Self.Services" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="ServiceID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserSubscriptions_UserInfo">
+          <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="1" />
+          <End Role="UserSubscriptions" Type="Self.UserSubscriptions" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserSubscriptions">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HackSaaSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Customers" EntityType="Self.Customers" />
+          <EntitySet Name="ServicePlanTypes" EntityType="Self.ServicePlanTypes" />
+          <EntitySet Name="Services" EntityType="Self.Services" />
+          <EntitySet Name="ServiceStatuses" EntityType="Self.ServiceStatuses" />
+          <EntitySet Name="UserInfo" EntityType="Self.UserInfo" />
+          <EntitySet Name="UserSubscriptions" EntityType="Self.UserSubscriptions" />
+          <AssociationSet Name="FK_UserSubscriptions_ServicePlanTypes" Association="Self.FK_UserSubscriptions_ServicePlanTypes">
+            <End Role="ServicePlanTypes" EntitySet="ServicePlanTypes" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Services_ServiceStatuses" Association="Self.FK_Services_ServiceStatuses">
+            <End Role="ServiceStatuses" EntitySet="ServiceStatuses" />
+            <End Role="Services" EntitySet="Services" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSubscriptions_Services" Association="Self.FK_UserSubscriptions_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserSubscriptions_UserInfo" Association="Self.FK_UserSubscriptions_UserInfo">
+            <End Role="UserInfo" EntitySet="UserInfo" />
+            <End Role="UserSubscriptions" EntitySet="UserSubscriptions" />
+          </AssociationSet>
+          <EntitySet Name="ServicePlanCosts" EntityType="HackSaaSModel.ServicePlanCosts" />
+          <AssociationSet Name="FK_ServicePlanCosts_ServicePlanTypes" Association="HackSaaSModel.FK_ServicePlanCosts_ServicePlanTypes">
+            <End Role="ServicePlanTypes" EntitySet="ServicePlanTypes" />
+            <End Role="ServicePlanCosts" EntitySet="ServicePlanCosts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ServicePlanCosts_Services" Association="HackSaaSModel.FK_ServicePlanCosts_Services">
+            <End Role="Services" EntitySet="Services" />
+            <End Role="ServicePlanCosts" EntitySet="ServicePlanCosts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ServicePlanCosts">
+          <Key>
+            <PropertyRef Name="ServiceCostID" />
+          </Key>
+          <Property Name="ServiceCostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ServiceID" Type="Int32" Nullable="false" />
+          <Property Name="PlanTypeID" Type="Int16" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <NavigationProperty Name="ServicePlanTypes" Relationship="HackSaaSModel.FK_ServicePlanCosts_ServicePlanTypes" FromRole="ServicePlanCosts" ToRole="ServicePlanTypes" />
+          <NavigationProperty Name="Services" Relationship="HackSaaSModel.FK_ServicePlanCosts_Services" FromRole="ServicePlanCosts" ToRole="Services" />
+        </EntityType>
+        <Association Name="FK_ServicePlanCosts_ServicePlanTypes">
+          <End Type="HackSaaSModel.ServicePlanTypes" Role="ServicePlanTypes" Multiplicity="1" />
+          <End Type="HackSaaSModel.ServicePlanCosts" Role="ServicePlanCosts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ServicePlanTypes">
+              <PropertyRef Name="PlanTypeID" />
+            </Principal>
+            <Dependent Role="ServicePlanCosts">
+              <PropertyRef Name="PlanTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ServicePlanCosts_Services">
+          <End Type="HackSaaSModel.Services" Role="Services" Multiplicity="1" />
+          <End Type="HackSaaSModel.ServicePlanCosts" Role="ServicePlanCosts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Services">
+              <PropertyRef Name="ServiceID" />
+            </Principal>
+            <Dependent Role="ServicePlanCosts">
+              <PropertyRef Name="ServiceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HackSaaSModelStoreContainer" CdmEntityContainer="HackSaaSEntities">
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="HackSaaSModel.Customers">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServicePlanTypes">
+            <EntityTypeMapping TypeName="HackSaaSModel.ServicePlanTypes">
+              <MappingFragment StoreEntitySet="ServicePlanTypes">
+                <ScalarProperty Name="PlanTypeID" ColumnName="PlanTypeID" />
+                <ScalarProperty Name="PlanType" ColumnName="PlanType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Services">
+            <EntityTypeMapping TypeName="HackSaaSModel.Services">
+              <MappingFragment StoreEntitySet="Services">
+                <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+                <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+                <ScalarProperty Name="ServiceDesc" ColumnName="ServiceDesc" />
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServiceStatuses">
+            <EntityTypeMapping TypeName="HackSaaSModel.ServiceStatuses">
+              <MappingFragment StoreEntitySet="ServiceStatuses">
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="StatusDesc" ColumnName="StatusDesc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfo">
+            <EntityTypeMapping TypeName="HackSaaSModel.UserInfo">
+              <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
+                <ScalarProperty Name="AmendedOn" ColumnName="AmendedOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserSubscriptions">
+            <EntityTypeMapping TypeName="HackSaaSModel.UserSubscriptions">
+              <MappingFragment StoreEntitySet="UserSubscriptions">
+                <ScalarProperty Name="UserSubID" ColumnName="UserSubID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+                <ScalarProperty Name="PlanTypeID" ColumnName="PlanTypeID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="SubscribedOn" ColumnName="SubscribedOn" />
+                <ScalarProperty Name="ExpiredOn" ColumnName="ExpiredOn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ServicePlanCosts">
+            <EntityTypeMapping TypeName="HackSaaSModel.ServicePlanCosts">
+              <MappingFragment StoreEntitySet="ServicePlanCosts">
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="PlanTypeID" ColumnName="PlanTypeID" />
+                <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
+                <ScalarProperty Name="ServiceCostID" ColumnName="ServiceCostID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
