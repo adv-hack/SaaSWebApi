@@ -43,3 +43,4 @@ D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.WebPages.Deploymen
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.WebPages.Razor.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.dll
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.csprojResolveAssemblyReference.cache

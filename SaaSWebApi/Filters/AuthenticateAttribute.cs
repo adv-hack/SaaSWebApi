@@ -11,17 +11,12 @@ using System.Web.Http.Filters;
 using SaaSService;
 using System.Web;
 using SaaSDAL;
+using SaaSDTO;
 
 namespace SaaSWebAPI
 {
     public class AuthenticateAttribute : ActionFilterAttribute
     {
-        private static string url = string.Empty;
-
-        public AuthenticateAttribute()
-        {
-            url = ConfigurationManager.AppSettings["WebApiURL"].ToString();
-        }
 
         public static string CalculateHash(string user, string sharedkey)
         {
@@ -38,7 +33,7 @@ namespace SaaSWebAPI
         {
             LoginService objLogin = new LoginService();
             UserInfo userInfo = objLogin.GetSharedkeybyUser(user);
-            byte[] secretBytes = ASCIIEncoding.ASCII.GetBytes(user+":"+userInfo.Token);
+            byte[] secretBytes = ASCIIEncoding.ASCII.GetBytes(user + ":" + userInfo.Token);
             HMACMD5 hmac = new HMACMD5(secretBytes);
             byte[] dataBytes = ASCIIEncoding.ASCII.GetBytes(userInfo.URL);
             byte[] computedHash = hmac.ComputeHash(dataBytes);
@@ -91,6 +86,7 @@ namespace SaaSWebAPI
 
         public override void OnActionExecuting(HttpActionContext actionContext)
         {
+            SaaSResponse objResponseXML = new SaaSResponse();            
             bool isAuthenticated = IsAuthenticated(actionContext);
 
             if (!isAuthenticated)
@@ -98,6 +94,49 @@ namespace SaaSWebAPI
                 var response = new HttpResponseMessage(HttpStatusCode.Unauthorized);
                 actionContext.Response = response;
             }
+            else
+            {
+                SaaSLogin objLoginDTO = new SaaSLogin();
+                LoginService objLoginBL = new LoginService();
+                string hMACDetails = FormBufferToString();
+                string user = string.Empty, sharedkey = string.Empty, url = string.Empty;
+                string strHmacString = string.Empty;
+                HMACDetails objHMACDetails = new HMACDetails();
+                objHMACDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<HMACDetails>(hMACDetails);
+                if (!string.IsNullOrEmpty(objHMACDetails.user))
+                {
+                    objLoginDTO.UserName = objHMACDetails.user;
+                }
+                if (!string.IsNullOrEmpty(objHMACDetails.password))
+                {
+                    objLoginDTO.Password = objHMACDetails.password;
+                }
+                bool IsValidUser = objLoginBL.ChkForLoginUserValidated(objLoginDTO);
+                if (!IsValidUser)
+                {
+                    var response = new HttpResponseMessage(HttpStatusCode.Unauthorized);
+                    actionContext.Response = response;
+                }
+            }
+        }
+
+        public static string FormBufferToString()
+        {
+            HttpRequest Request = HttpContext.Current.Request;
+
+            if (Request.TotalBytes > 0)
+                return Encoding.Default.GetString(Request.BinaryRead(Request.TotalBytes));
+
+            return string.Empty;
+        }
+
+        public class HMACDetails
+        {
+            public string user { get; set; }
+
+            public string sharedkey { get; set; }
+
+            public string password { get; set; }
         }
     }
 }

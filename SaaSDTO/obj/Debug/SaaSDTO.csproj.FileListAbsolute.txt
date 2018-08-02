@@ -33,3 +33,4 @@ D:\Projects\Hackathon\SaaSWebApi\SaaSDTO\bin\Debug\System.Web.WebPages.Deploymen
 D:\Projects\Hackathon\SaaSWebApi\SaaSDTO\bin\Debug\System.Web.WebPages.Razor.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSDTO\obj\Debug\SaaSDTO.dll
 D:\Projects\Hackathon\SaaSWebApi\SaaSDTO\obj\Debug\SaaSDTO.pdb
+D:\Projects\Hackathon\SaaSWebApi\SaaSDTO\obj\Debug\SaaSDTO.csprojResolveAssemblyReference.cache

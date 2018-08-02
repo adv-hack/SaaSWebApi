@@ -210,7 +210,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53190</DevelopmentServerPort>
+          <DevelopmentServerPort>54000</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/SaaSWebApi</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>

@@ -13,7 +13,7 @@ namespace SaaSWebAPI
     {
         //API for Login Credentials check for UserSSSSS
 
-        [HttpGet]
+        [HttpPost]
         public SaaSResponse AuthenticateUser(string uname, string pin)
         {
             bool IsValidUser = false;
@@ -44,37 +44,6 @@ namespace SaaSWebAPI
             }
             return objResponseXML;
             //return new HttpResponseMessage() { Content = new StringContent(, Encoding.UTF8, "application/xml") };
-        }
-
-        [HttpPost]
-        public string HMACSharedKey()
-        {
-            string hMACDetails = FormBufferToString();
-            string user = string.Empty, sharedkey = string.Empty, url = string.Empty;
-            string strHmacString = string.Empty;
-            HMACDetails objHMACDetails = new HMACDetails();
-            objHMACDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<HMACDetails>(hMACDetails);
-            strHmacString = AuthenticateAttribute.CalculateHash(objHMACDetails.user, objHMACDetails.sharedkey);
-            return strHmacString;
-        }
-
-        public class HMACDetails
-        {
-            public string user { get; set; }
-
-            public string sharedkey { get; set; }
-
-            public string url { get; set; }
-        }
-
-        public static string FormBufferToString()
-        {
-            HttpRequest Request = HttpContext.Current.Request;
-
-            if (Request.TotalBytes > 0)
-                return Encoding.Default.GetString(Request.BinaryRead(Request.TotalBytes));
-
-            return string.Empty;
         }
     }
 }

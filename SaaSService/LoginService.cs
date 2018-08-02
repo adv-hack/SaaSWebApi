@@ -30,11 +30,11 @@ namespace SaaSService
                     //'login.Status = (int)CrossCarePatientPortalPOCDAL.Enum.LoginStatus.AlreadyLogin;
                     //'HttpContext.Current.Session["PatientID"] = loginDTO.UserID;
                     //'login.SessionID = HttpContext.Current.Session.SessionID;
-                    Context.SaveChanges();
+                    //Context.SaveChanges();
                     //'loginDTO.loginStatus = SaaSDTO.SaaSLogin.LoginStatus.AlreadyLogin;
-                    loginDTO.Login = true;
+                    //loginDTO.Login = true;
                     //'loginDTO.SessionId = login.SessionID;
-                    loginDTO.UserID = login.UserID;
+                    //loginDTO.UserID = login.UserID;
                     isValidUser = true;
                 }
                 catch(Exception ex)
