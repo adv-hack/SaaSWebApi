@@ -53,6 +53,7 @@
     <Property Name="RegisteredDate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="AmendedOn" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="UserSubscriptions" Relationship="Self.FK_UserSubscriptions_UserInfo" FromRole="UserInfo" ToRole="UserSubscriptions" />
+    <Property Name="URL" Type="String" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="UserSubscriptions">
     <Key>

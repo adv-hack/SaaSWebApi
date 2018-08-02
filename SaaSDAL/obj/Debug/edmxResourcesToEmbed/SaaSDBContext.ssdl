@@ -55,6 +55,7 @@
     <Property Name="Token" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="RegisteredDate" Type="datetime" Nullable="false" />
     <Property Name="AmendedOn" Type="datetime" Nullable="false" />
+    <Property Name="URL" Type="varchar" MaxLength="2000" Nullable="false" />
   </EntityType>
   <EntityType Name="UserSubscriptions">
     <Key>

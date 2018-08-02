@@ -41,6 +41,5 @@ D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.Razor.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.WebPages.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\bin\Debug\System.Web.WebPages.Razor.xml
-D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.csprojResolveAssemblyReference.cache
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.dll
 D:\Projects\Hackathon\SaaSWebApi\SaaSDAL\obj\Debug\SaaSDAL.pdb

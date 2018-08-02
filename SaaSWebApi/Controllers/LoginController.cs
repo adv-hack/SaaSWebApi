@@ -54,7 +54,7 @@ namespace SaaSWebAPI
             string strHmacString = string.Empty;
             HMACDetails objHMACDetails = new HMACDetails();
             objHMACDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<HMACDetails>(hMACDetails);
-            strHmacString = AuthenticateAttribute.CalculateHash(objHMACDetails.user, objHMACDetails.sharedkey, objHMACDetails.url);
+            strHmacString = AuthenticateAttribute.CalculateHash(objHMACDetails.user, objHMACDetails.sharedkey);
             return strHmacString;
         }
 

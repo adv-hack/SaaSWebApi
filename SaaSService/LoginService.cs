@@ -50,9 +50,9 @@ namespace SaaSService
         /// </summary>
         /// <param name="username">string</param>
         /// <returns>string</returns>
-        public string GetSharedkeybyUser(string username)
+        public UserInfo GetSharedkeybyUser(string username)
         {
-            string SharedKey = string.Empty;
+            UserInfo User = new UserInfo() ;
 
             //Check for Passing Argument
             if (string.IsNullOrEmpty(username))
@@ -65,14 +65,14 @@ namespace SaaSService
                     var login = Context.UserInfo.Where(x => x.UserName == username).FirstOrDefault();
                     if (login == null || login.UserID <= 0)
                         throw new Exception("User Name is Not Valid");
-                    SharedKey = login.Token;
+                    User = login;
                 }
                 catch
                 {
                     throw new Exception("Error on Get User Sharedkey ,Try again later");
                 }
             }
-            return SharedKey;
+            return User;
         }
 
         /// <summary>

@@ -9,6 +9,8 @@ using System.Text;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 using SaaSService;
+using System.Web;
+using SaaSDAL;
 
 namespace SaaSWebAPI
 {
@@ -21,11 +23,13 @@ namespace SaaSWebAPI
             url = ConfigurationManager.AppSettings["WebApiURL"].ToString();
         }
 
-        public static string CalculateHash(string user, string sharedkey, string url)
+        public static string CalculateHash(string user, string sharedkey)
         {
             byte[] secretBytes = ASCIIEncoding.ASCII.GetBytes(sharedkey);
             HMACMD5 hmac = new HMACMD5(secretBytes);
-            byte[] dataBytes = ASCIIEncoding.ASCII.GetBytes(url);
+            var urllocal = HttpContext.Current.Request;
+            var updatedurl = GetBaseUrl(urllocal);
+            byte[] dataBytes = ASCIIEncoding.ASCII.GetBytes(updatedurl);
             byte[] computedHash = hmac.ComputeHash(dataBytes);
             return user + ":" + Convert.ToBase64String(computedHash);
         }
@@ -33,12 +37,17 @@ namespace SaaSWebAPI
         private static string CalculateHash(string user)
         {
             LoginService objLogin = new LoginService();
-            string sharedKey = objLogin.GetSharedkeybyUser(user);
-            byte[] secretBytes = ASCIIEncoding.ASCII.GetBytes(sharedKey);
+            UserInfo userInfo = objLogin.GetSharedkeybyUser(user);
+            byte[] secretBytes = ASCIIEncoding.ASCII.GetBytes(user+":"+userInfo.Token);
             HMACMD5 hmac = new HMACMD5(secretBytes);
-            byte[] dataBytes = ASCIIEncoding.ASCII.GetBytes(url);
+            byte[] dataBytes = ASCIIEncoding.ASCII.GetBytes(userInfo.URL);
             byte[] computedHash = hmac.ComputeHash(dataBytes);
             return user + ":" + Convert.ToBase64String(computedHash);
+        }
+
+        public static string GetBaseUrl(HttpRequest request)
+        {
+            return string.Format("{0}://{1}", request.UrlReferrer.Scheme, request.UrlReferrer.Authority);
         }
 
         private static string GetHttpRequestHeader(HttpHeaders headers, string headerName)
@@ -53,7 +62,8 @@ namespace SaaSWebAPI
         private static bool IsAuthenticated(string userName, string header)
         {
             var verifiedHash = CalculateHash(userName);
-            if (header.Equals(verifiedHash))
+            var getUserHashKeyFromHeader = CalculateHash(userName, header);
+            if (getUserHashKeyFromHeader.Equals(verifiedHash))
                 return true;
 
             return false;
@@ -63,7 +73,7 @@ namespace SaaSWebAPI
         {
             var headers = actionContext.Request.Headers;
 
-            var authenticationString = GetHttpRequestHeader(headers, "Autherization");
+            var authenticationString = GetHttpRequestHeader(headers, "Authorization");
             if (string.IsNullOrEmpty(authenticationString))
                 return false;
 

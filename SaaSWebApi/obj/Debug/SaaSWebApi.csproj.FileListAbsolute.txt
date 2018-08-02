@@ -172,9 +172,6 @@ D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\System.Web.WebPages.
 D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\bin\EntityFramework.xml
 D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\obj\Debug\SaaSWebApi.dll
 D:\Projects\NFP\Source GIT\Hackthon\HackSaaS\SaaSWebApi\obj\Debug\SaaSWebApi.pdb
-D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.csprojResolveAssemblyReference.cache
-D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.dll
-D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.pdb
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\ApplicationInsights.config
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\csc.exe
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -239,3 +236,6 @@ D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Deployment.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\System.Web.WebPages.Razor.xml
 D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\bin\EntityFramework.xml
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.csprojResolveAssemblyReference.cache
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.dll
+D:\Projects\Hackathon\SaaSWebApi\SaaSWebApi\obj\Debug\SaaSWebApi.pdb

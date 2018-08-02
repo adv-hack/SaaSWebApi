@@ -60,6 +60,7 @@
           <Property Name="Token" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="RegisteredDate" Type="datetime" Nullable="false" />
           <Property Name="AmendedOn" Type="datetime" Nullable="false" />
+          <Property Name="URL" Type="varchar" MaxLength="2000" Nullable="false" />
         </EntityType>
         <EntityType Name="UserSubscriptions">
           <Key>
@@ -235,6 +236,7 @@
           <Property Name="RegisteredDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="AmendedOn" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="UserSubscriptions" Relationship="Self.FK_UserSubscriptions_UserInfo" FromRole="UserInfo" ToRole="UserSubscriptions" />
+          <Property Name="URL" Type="String" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="UserSubscriptions">
           <Key>
@@ -414,6 +416,7 @@
           <EntitySetMapping Name="UserInfo">
             <EntityTypeMapping TypeName="HackSaaSModel.UserInfo">
               <MappingFragment StoreEntitySet="UserInfo">
+                <ScalarProperty Name="URL" ColumnName="URL" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="FullName" ColumnName="FullName" />
